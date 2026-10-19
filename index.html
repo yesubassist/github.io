@@ -88,7 +88,7 @@
                 </span>
             </a>
 
-            <!-- Desktop Nav Menu (Home button removed as Jessica Marie text serves as Home) -->
+            <!-- Desktop Nav Menu -->
             <nav class="hidden md:flex items-center gap-1 bg-slate-100/80 p-1.5 rounded-full text-sm font-bold text-slate-600">
                 <button id="nav-portfolio" onclick="switchPage('portfolio')" class="nav-btn px-5 py-2 rounded-full transition-all duration-300 hover:text-wakePurple">Portfolio</button>
                 <button id="nav-about" onclick="switchPage('about')" class="nav-btn px-5 py-2 rounded-full transition-all duration-300 hover:text-wakePurple">About Me</button>
@@ -97,9 +97,6 @@
 
             <!-- Actions -->
             <div class="hidden sm:flex items-center gap-3">
-                <button onclick="toggleGithubModal()" class="px-4 py-2 text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full transition-all flex items-center gap-2">
-                    <i class="fa-brands fa-github text-base"></i> Deploy to GitHub
-                </button>
                 <button onclick="switchPage('contact')" class="px-5 py-2.5 rounded-full font-bold text-sm bg-gradient-to-r from-wakePurple to-wakeBlue text-white hover:opacity-90 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-wakePurple/20">
                     Let's Talk <i class="fa-solid fa-arrow-right text-xs ml-1"></i>
                 </button>
@@ -116,10 +113,6 @@
             <button onclick="switchPage('portfolio'); toggleMobileMenu();" class="text-left font-bold py-2.5 px-4 rounded-xl hover:bg-slate-50 text-slate-800">Portfolio</button>
             <button onclick="switchPage('about'); toggleMobileMenu();" class="text-left font-bold py-2.5 px-4 rounded-xl hover:bg-slate-50 text-slate-800">About Me</button>
             <button onclick="switchPage('contact'); toggleMobileMenu();" class="text-left font-bold py-2.5 px-4 rounded-xl hover:bg-slate-50 text-slate-800">Contact Me</button>
-            <hr class="my-1 border-slate-100">
-            <button onclick="toggleGithubModal(); toggleMobileMenu();" class="w-full py-2.5 px-4 rounded-xl font-bold bg-slate-100 text-slate-800 text-center flex items-center justify-center gap-2">
-                <i class="fa-brands fa-github"></i> Deploy to GitHub Guide
-            </button>
         </div>
     </header>
 
@@ -563,7 +556,7 @@
                     <i class="fa-solid fa-paper-plane"></i> Get In Touch
                 </div>
                 <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900">Let's Connect & Build Your Funnels!</h1>
-                <p class="text-slate-600 text-lg">Send me a direct message for GHL setups, Meta ads, AI video ads, or SEO campaigns.</p>
+                <p class="text-slate-600 text-lg">Send me a direct message or connect through one of the direct channels below.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 max-w-5xl mx-auto items-start">
@@ -574,33 +567,41 @@
                         <p class="text-purple-100 text-sm leading-relaxed">Available for freelance contract projects and ongoing automation roles.</p>
                         
                         <div class="space-y-4 pt-2">
-                            <div class="flex items-center gap-4 bg-white/10 p-4 rounded-2xl backdrop-blur-md">
-                                <div class="w-10 h-10 rounded-xl bg-white text-wakePurple flex items-center justify-center text-lg font-bold">
+                            <!-- Clickable Email Card (Direct Mailto) -->
+                            <a href="mailto:banculojessicamarie@gmail.com" class="flex items-center gap-4 bg-white/10 hover:bg-white/20 transition-all p-4 rounded-2xl backdrop-blur-md group">
+                                <div class="w-12 h-12 rounded-xl bg-white text-wakePurple flex items-center justify-center text-xl font-bold group-hover:scale-110 transition-transform">
                                     <i class="fa-solid fa-envelope"></i>
                                 </div>
-                                <div>
-                                    <div class="text-xs text-purple-200 font-bold uppercase">Email Address</div>
-                                    <div class="font-bold text-xs sm:text-sm">banculojessicamarie@gmail.com</div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-purple-200 font-bold uppercase tracking-wider">Send Email</div>
+                                    <div class="font-bold text-sm text-white flex items-center justify-between">
+                                        <span>Compose Message</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
+
+                            <!-- Direct WhatsApp Protocol (Launches Native App directly) -->
+                            <a href="whatsapp://send?phone=639776857216&text=Hi%20Jessica,%20I'd%20like%20to%20discuss%20a%20project!" class="flex items-center gap-4 bg-white/10 hover:bg-white/20 transition-all p-4 rounded-2xl backdrop-blur-md group">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-2xl font-bold group-hover:scale-110 transition-transform">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-purple-200 font-bold uppercase tracking-wider">WhatsApp Chat</div>
+                                    <div class="font-bold text-sm text-white flex items-center justify-between">
+                                        <span>Open App Directly</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                                    </div>
+                                </div>
+                            </a>
 
                             <div class="flex items-center gap-4 bg-white/10 p-4 rounded-2xl backdrop-blur-md">
-                                <div class="w-10 h-10 rounded-xl bg-white text-wakePurple flex items-center justify-center text-lg font-bold">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div>
-                                    <div class="text-xs text-purple-200 font-bold uppercase">Phone</div>
-                                    <div class="font-bold text-sm">+63 977 685 7216</div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center gap-4 bg-white/10 p-4 rounded-2xl backdrop-blur-md">
-                                <div class="w-10 h-10 rounded-xl bg-white text-wakePurple flex items-center justify-center text-lg font-bold">
+                                <div class="w-12 h-12 rounded-xl bg-white text-wakePurple flex items-center justify-center text-xl font-bold">
                                     <i class="fa-solid fa-location-dot"></i>
                                 </div>
                                 <div>
-                                    <div class="text-xs text-purple-200 font-bold uppercase">Location</div>
-                                    <div class="font-bold text-sm">Zambales 2207, PH</div>
+                                    <div class="text-xs text-purple-200 font-bold uppercase tracking-wider">Location</div>
+                                    <div class="font-bold text-sm text-white">Zambales 2207, PH</div>
                                 </div>
                             </div>
                         </div>
@@ -656,53 +657,6 @@
 
     </main>
 
-    <!-- GitHub Pages Setup Modal -->
-    <div id="github-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-white max-w-2xl w-full rounded-3xl p-6 sm:p-8 space-y-6 relative max-h-[90vh] overflow-y-auto wake-shadow-lg">
-            
-            <button onclick="toggleGithubModal()" class="absolute top-6 right-6 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <div class="space-y-2">
-                <div class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-xs font-bold">
-                    <i class="fa-brands fa-github"></i> GitHub Pages Deployment
-                </div>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">How to Publish This Portfolio</h2>
-            </div>
-
-            <div class="space-y-4 text-sm text-slate-700">
-                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex gap-4">
-                    <div class="w-7 h-7 rounded-full bg-wakePurple text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">1</div>
-                    <div>
-                        <strong class="text-slate-900 font-bold block mb-1">Create Repository</strong>
-                        Go to GitHub and create a new public repository named <code class="bg-slate-200 px-1.5 py-0.5 rounded text-xs">jessica-marie-portfolio</code>.
-                    </div>
-                </div>
-
-                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex gap-4">
-                    <div class="w-7 h-7 rounded-full bg-wakePink text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">2</div>
-                    <div>
-                        <strong class="text-slate-900 font-bold block mb-1">Upload File</strong>
-                        Save this file as <code class="bg-slate-200 px-1.5 py-0.5 rounded text-xs">index.html</code> and upload it directly to the root of your <code class="bg-slate-200 px-1.5 py-0.5 rounded text-xs">main</code> branch.
-                    </div>
-                </div>
-
-                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex gap-4">
-                    <div class="w-7 h-7 rounded-full bg-wakeBlue text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">3</div>
-                    <div>
-                        <strong class="text-slate-900 font-bold block mb-1">Enable GitHub Pages</strong>
-                        In Repository Settings &gt; Pages, set Source to <strong>Deploy from a branch</strong>, select <code class="bg-slate-200 px-1.5 py-0.5 rounded text-xs">main</code> branch, and click Save.
-                    </div>
-                </div>
-            </div>
-
-            <div class="pt-2 flex justify-end">
-                <button onclick="toggleGithubModal()" class="px-6 py-2.5 rounded-full bg-slate-900 text-white font-bold text-xs hover:bg-wakePurple transition-all">Got It!</button>
-            </div>
-        </div>
-    </div>
-
     <footer class="border-t border-slate-200 bg-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-2">
@@ -715,6 +669,7 @@
 
             <div class="flex gap-4 text-slate-400">
                 <a href="mailto:banculojessicamarie@gmail.com" class="hover:text-wakePurple transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+                <a href="whatsapp://send?phone=639776857216&text=Hi%20Jessica,%20I'd%20like%20to%20discuss%20a%20project!" class="hover:text-emerald-500 transition-colors"><i class="fa-brands fa-whatsapp text-lg"></i></a>
             </div>
         </div>
     </footer>
@@ -783,12 +738,6 @@
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
-        }
-
-        // Modal
-        function toggleGithubModal() {
-            const modal = document.getElementById('github-modal');
-            modal.classList.toggle('hidden');
         }
     </script>
 </body>
